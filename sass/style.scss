@@ -1,1 +1,113 @@
-@import "blocks/page-header.sсss";
+@import "mixins.scss";
+@import "variables.scss";
+
+h1,h2,h3,h4,p {
+	margin: 0;
+}
+ul,li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body {
+}
+.statistics-item p {position: relative;}
+sup { 
+	line-height: 0;
+ }
+ 
+.page-header {
+	min-height: 135px;
+	@include outline();
+
+}
+.page-header__logo {
+		min-height: 85px;
+		@include outline();
+	}
+.visibility-hidden {
+	display: none;
+}
+.wrapper {
+	@include container();
+	@include clearfix();
+}
+
+@media (min-width: 768px) {
+	.page-header {
+		position: relative;
+		min-height: 70px;
+		padding-bottom: 400px;
+	}
+	.page-header__logo {
+		position: absolute;
+		@include outline-blue();
+		min-height: 400px;
+		width: 100%;
+		bottom: 0;
+	}
+
+}
+@media (min-width: 1200px) {
+		.page-header {
+		position: relative;
+		min-height: 70px;
+		padding-bottom: 650px;
+	}
+	.page-header__logo {
+		position: absolute;
+		@include outline-blue();
+		min-height: 650px;
+		width: 100%;
+		bottom: 0;
+	}
+}
+
+/*MAIN_NAV*/
+.main-nav {
+	display: none;
+}
+/*STATISTICS*/
+
+.statistics__promo {
+	min-height: 185px;
+	@include outline();
+	float: left;
+}
+.statistics-items {
+	float: right;
+}
+.statistics__item {
+	width: 100%;
+	min-height: 80px;
+	@include outline-blue();
+}
+@media (min-width: 768px) {
+	
+}
+@media (min-width: 1200px) {
+	.statistics__promo {
+		width: 50%;
+	}
+	.statistics-items {
+	    font-size: 0;
+	    width: 50%;
+}
+	.statistics__item {
+		display: inline-block;
+		text-align: top;
+		width: 50%;
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+/*ADVANTAGES*/
+.advantages {
+	min-height: 410px;
+	@include outline();
+}
+.advantages__item {
+	min-height: 275px;
+	@include outline-blue();
+}

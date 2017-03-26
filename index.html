@@ -3,74 +3,82 @@
 <head>
 	<title>Barbershop</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="normalize/style.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
 		<h1 class="visibility-hidden">Barbershop Borodinski</h1>
-		<div class="header__logo">
+		<div class="page-header__logo">
 			<a href=""><img src="" alt=""></a>
 		</div>
-		<nav class="main-nav main-nav__hidden">
-			<ul class="main_nav__list">
-				<li><a href="">ГЛАВНАЯ</a></li>
-				<li><a href="">НАШИ РАБОТЫ</a></li>
-				<li><a href="">ЗАПИСАТЬСЯ</a></li>
-				<li><a href="">КОНТАКТЫ</a></li>
-				<li><a href="">HTML ACADEMY</a></li>
-			</ul>
-			<ul class="main-nav__user-block">
-				<li><a href="">ВХОД</a></li>
-			</ul>
+		<span>ГЛАВНАЯ</span>
+		<nav class="main-nav">
+			<div class="wrapper">
+				<ul class="main_nav__list">
+					<li><a href="">ГЛАВНАЯ</a></li>
+					<li><a href="">НАШИ РАБОТЫ</a></li>
+					<li><a href="">ЗАПИСАТЬСЯ</a></li>
+					<li><a href="">КОНТАКТЫ</a></li>
+					<li><a href="">HTML ACADEMY</a></li>
+				</ul>
+				<ul class="main-nav__user-block">
+					<li><a href="">ВХОД</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<main class="page-content">
-		<section class="statistics">
-			<div class="statistics__promo"></div>
-				<h2>СТРИЖКА У НАС ЭТО ВЫГОДНО</h2>
-				<p>Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
-			</div>
-			<div class="statistics__item">
-				<h2>1 500<sup>*</sup></h2>
-				<p>рублей вложений</p>
-			</div>
-			<div class="statistics__item">
-				<h2>7 200</h2>
-				<p>секунд времени мастера</p>
-			</div>
-			<div class="statistics__item">
-				<h2>90 000</h2>
-				<p>постриженных волос</p>
-			</div>
-			<div class="statistics__item">
-				<h2>500 000<sup>*</sup></h2>
-				<p>лайков и комплиментов</p>
-			</div>
-			<span><sup>*</sup> - привёденные данные ложь</span>
+		<section class="statistics wrapper">
+<!-- 			<div class="wrapper"> -->
+				<div class="statistics__promo">
+					<h2>СТРИЖКА У НАС ЭТО ВЫГОДНО</h2>
+					<p>Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+				</div>
+				<div class="statistics-items">
+					<div class="statistics__item">
+						<h2>1 500<sup>*</sup></h2>
+						<p>рублей вложений</p>
+					</div>
+					<div class="statistics__item">
+						<h2>7 200</h2>
+						<p>секунд времени мастера</p>
+					</div>
+					<div class="statistics__item">
+						<h2>90 000</h2>
+						<p>постриженных волос</p>
+					</div>
+					<div class="statistics__item">
+						<h2>500 000<sup>*</sup></h2>
+						<p>лайков и комплиментов</p>
+					</div>
+				</div>
+				<span><sup>*</sup> - привёденные данные ложь</span>
+<!-- 			</div> -->
 		</section>
-		<section class="advantages">
-			<div class="advantages__slider">
-				<div class="slider__item slider__item--quick">
+		<section class="advantages wrapper">
+			<ul class="advantages__list">
+				<li class="advantages__item advantages__item--quick">
 					<img src="" alt="">
 					<h3>БЫСТРО</h3>
 					<p>Мы делаем свою работу быстро!ДВа часа пролетят незаметно и Вы - счастливый обладатель счастливой стрижки-минутки</p>
-				</div>
-				<div class="slider__item slider__item--cool">
+				</li>
+				<li class="advantages__item advantages__item--cool">
 					<img src="" alt="">
 					<h3>КРУТО</h3>
 					<p>Забудьте как Вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино.</p>
-				</div>
-				<div class="slider__item slider__item--cheap">
+				</li>
+				<li class="advantages__item advantages__item--cheap">
 					<img src="" alt="">
 					<h3>ДОРОГО</h3>
 					<p>Наши мастера - профессионалы своего дела и не могут стоит дешево. К тому же, разве цена не дает определенный статус?</p>
-				</div>
+				</li>
 				<div class="slider__switcher slider__switcher--advantages">
 					<input type="radio">
 					<input type="radio">
 					<input type="radio">
 				</div>
-			</div>
+			</ul>
 		</section>
 		<section class="news">
 			<h2>НОВОСТИ И АКЦИИ</h2>
