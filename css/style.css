@@ -6,9 +6,6 @@ ul, li {
   padding: 0;
   list-style: none; }
 
-.statistics-item p {
-  position: relative; }
-
 sup {
   line-height: 0; }
 
@@ -67,24 +64,37 @@ sup {
 /*STATISTICS*/
 .statistics__promo {
   min-height: 185px;
-  outline: 1px solid red;
-  float: left; }
-
-.statistics-items {
-  float: right; }
+  outline: 1px solid red; }
 
 .statistics__item {
   width: 100%;
   min-height: 80px;
   outline: 1px solid blue; }
 
+@media (min-width: 768px) {
+  .statistics__promo {
+    min-height: 320px; }
+  .statistics-items {
+    font-size: 0; }
+  .statistics__item {
+    min-height: 160px;
+    display: inline-block;
+    text-align: top;
+    width: 50%;
+    font-size: 14px;
+    line-height: 18px; } }
+
 @media (min-width: 1200px) {
   .statistics__promo {
+    float: left;
+    min-height: 320px;
     width: 50%; }
   .statistics-items {
+    float: right;
     font-size: 0;
     width: 50%; }
   .statistics__item {
+    min-height: 160px;
     display: inline-block;
     text-align: top;
     width: 50%;
@@ -93,9 +103,17 @@ sup {
 
 /*ADVANTAGES*/
 .advantages {
+  position: relative;
   min-height: 410px;
   outline: 1px solid red; }
 
 .advantages__item {
   min-height: 275px;
   outline: 1px solid blue; }
+
+.advantages__item {
+  position: absolute;
+  width: 100%; }
+
+.advantages__item--cheap {
+  z-index: 100; }
