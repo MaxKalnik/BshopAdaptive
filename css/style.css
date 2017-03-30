@@ -183,3 +183,22 @@ sup {
 .reviews-left,
 .reviews-right {
   display: none; }
+
+.reviews-item {
+  padding-left: 70px;
+  min-height: 155px;
+  outline: 1px solid blue; }
+
+@media (min-width: 768px) {
+  .reviews-right {
+    display: inline-block;
+    min-height: 70px;
+    width: 8%;
+    outline: 1px solid red;
+    text-align: top; }
+  .reviews-item {
+    display: inline-block;
+    width: auto;
+    text-align: top; }
+  .reviews {
+    text-align: top; } }
