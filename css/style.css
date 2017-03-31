@@ -21,7 +21,7 @@ sup {
   display: none; }
 
 .wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   content: "";
   display: table;
@@ -270,8 +270,6 @@ sup {
   outline: 1px solid blue; }
 
 .contacts {
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center;
   margin-bottom: 30px;
   outline: 1px solid blue; }
@@ -287,8 +285,10 @@ sup {
     padding-right: 30px; }
 
 .socials {
+  max-width: 320px;
   margin-bottom: 30px;
-  outline: 1px solid red; }
+  outline: 1px solid red;
+  margin: 0 auto; }
   .socials-item {
     display: inline-block;
     width: 32%;
@@ -299,8 +299,6 @@ sup {
     display: none; }
 
 .developed-by {
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: center; }
   .developed-by p {
     margin-bottom: 15px; }
@@ -352,3 +350,21 @@ sup {
     float: right; } }
 
 /*BSHOP-PHOTO*/
+.client-info input {
+  display: block;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box; }
+
+.client-info textarea {
+  width: 100%; }
+
+.beard-select div {
+  display: inline-block; }
+
+.add-services label {
+  display: block; }

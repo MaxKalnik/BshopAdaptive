@@ -34,53 +34,69 @@
 		<div class="wrapper">
 			<h1>ЗАПИСЬ НА СТРИЖКУ</h1>
 			<form action="">
-				<fieldset>
+				<fieldset class="client-info">
 					<legend></legend>
-					<input type="text">
-					<input type="text">
-					<input type="text"><br>
-					<input type="tel"><br>
-					<input type="email"><br>
+					<input type="text" placeholder="Фамилия">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Отчество">
+					<input type="tel" placeholder="Контактный телефон">
+					<input type="email" placeholder="Контактный e-mail">
 					<textarea name="" id="" cols="30" rows="10"></textarea>
 				</fieldset>
 
-				<fieldset>
+				<fieldset class="beard-select">
 					<legend>ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ</legend>
-					<input type="radio" id="" name="" value="">
-					<label for=""></label>
+					<div>
+					<input type="radio" id="admiral" name="beard" value="opt1"><br>
+					<label for="admiral">адмирал<br><img src="" alt=""></label>
+					</div>
 
-					<input type="radio" id="" name="" value="">
-					<label for=""></label>
+					<div>
+					<input type="radio" id="lumberjack" name="beard" value="opt2"><br>
+					<label for="lumberjack">лесоруб<br><img src="" alt=""></label>
+					</div>
 
-					<input type="radio" id="" name="" value="">
-					<label for=""></label>
+					<div>
+					<input type="radio" id="polar" name="beard" value="opt3"><br>
+					<label for="polar">полярник<br><img src="" alt=""></label>
+					</div>
 
-					<input type="radio" id="" name="" value="">
-					<label for=""></label>
+					<div>
+					<input type="radio" id="boyar" name="beard" value="opt4"><br>
+					<label for="boyar">боярин<br><img src="" alt=""></label>
+					</div>
 
-					<input type="radio" id="" name="" value="">
-					<label for=""></label>
+					<div>
+					<input type="radio" id="wise" name="beard" value="opt5"><br>
+					<label for="wise">мудрец<br><img src="" alt=""></label>
+					</div>
 				</fieldset>
 
-				<fieldset>
-					<legend></legend>
-					<input type="checkbox" name="" value="" id="">
-					<label for=""></label>
+				<fieldset class="add-services">
+					<legend>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</legend>
+					<label for="dye">
+					<input type="checkbox" name="add-srv" value="opt1" id="dye">
+					Подкрасить бороду</label>
+					
+					<label for="mustache">
+					<input type="checkbox" name="add-srv" value="opt2" id="mustache">
+					Накрутить усы</label>
 
-					<input type="checkbox" name="" value="" id="">
-					<label for=""></label>
+					<label for="curve-beard">
+					<input type="checkbox" name="add-srv" value="opt3" id="curve-beard">
+					Причесать бороду</label>
 
-					<input type="checkbox" name="" value="" id="">
-					<label for=""></label>
+					<label for="whiskers">
+					<input type="checkbox" name="add-srv" value="opt4" id="whiskers">
+					Подровнять виски</label>
 
-					<input type="checkbox" name="" value="" id="">
-					<label for=""></label>
+					<label for="gray">
+					<input type="checkbox" name="add-srv" value="opt5" id="gray">
+					Убрать седину</label>
 
-					<input type="checkbox" name="" value="" id="">
-					<label for=""></label>
-
-					<input type="checkbox" name="" value="" id="">
-					<label for=""></label>
+					<label for="bold">
+					<input type="checkbox" name="add-srv" value="opt6" id="bold">
+					Отполировать лысину</label>
 				</fieldset>
 
 				<button class="" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>

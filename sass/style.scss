@@ -343,8 +343,6 @@ sup {
 	@include outline-blue();
 }
 .contacts {
-	padding-left: 10px;
-	padding-right: 10px;
 	text-align: center;
 	margin-bottom: 30px;
 	@include outline-blue();
@@ -362,8 +360,10 @@ sup {
 	}
 }
 .socials {
+	max-width: 320px;
 	margin-bottom: 30px;
 	@include outline();
+	margin: 0 auto;
 	&-item {
 		display: inline-block;
 		width: 32%;
@@ -376,8 +376,6 @@ sup {
 	}
 }
 .developed-by {
-	padding-left: 10px;
-	padding-right: 10px;
 	text-align: center;
 	& p {
 		margin-bottom: 15px;
@@ -453,5 +451,23 @@ sup {
 
 
 /*BSHOP-PHOTO*/
-
+.client-info input {
+	display: block;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+.client-info textarea {
+	width: 100%;
+}
+.beard-select div {
+	display: inline-block;
+}
+.add-services label {
+	display: block;
+}
 
