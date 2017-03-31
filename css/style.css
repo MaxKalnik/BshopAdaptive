@@ -103,7 +103,7 @@ sup {
     line-height: 18px; } }
 
 /*ADVANTAGES*/
-.advantages {
+.advantages .wrapper {
   position: relative;
   min-height: 410px;
   outline: 1px solid red; }
@@ -139,11 +139,11 @@ sup {
     display: none; } }
 
 /*NEWS*/
-.news {
+.news .wrapper {
   position: relative;
   padding-top: 35px;
   padding-bottom: 35px; }
-  .news h2 {
+  .news .wrapper h2 {
     text-align: center; }
 
 .news-item {
@@ -189,12 +189,12 @@ sup {
 .reviews-right {
   display: none; }
 
-.reviews {
+.reviews .wrapper {
   position: relative;
   min-height: 290px;
   outline: 1px solid red;
   padding-top: 27px; }
-  .reviews h2 {
+  .reviews .wrapper h2 {
     text-align: center;
     margin-bottom: 30px; }
 
@@ -218,7 +218,7 @@ sup {
   transform: translateX(-50%); }
 
 @media (min-width: 768px) {
-  .reviews {
+  .reviews .wrapper {
     min-height: 245px; }
   .reviews-left,
   .reviews-right {
@@ -240,9 +240,10 @@ sup {
     text-align: top; } }
 
 @media (min-width: 1200px) {
-  .reviews {
+  .reviews .wrapper {
     min-height: 245px;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    text-align: top; }
   .reviews-left,
   .reviews-right {
     display: block;
@@ -258,9 +259,7 @@ sup {
     width: 820px;
     padding-left: 0;
     left: 50%;
-    transform: translateX(-50%); }
-  .reviews {
-    text-align: top; } }
+    transform: translateX(-50%); } }
 
 /*FOOTER*/
 .page-footer {
