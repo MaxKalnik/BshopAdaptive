@@ -33,6 +33,7 @@
 	<main class="form-content">
 		<div class="wrapper">
 			<h1>ЗАПИСЬ НА СТРИЖКУ</h1>
+			<a class="index-btn" href="index.html">НА ГЛАВНУЮ</a>
 			<form action="">
 				<fieldset class="client-info">
 					<legend></legend>
@@ -41,11 +42,11 @@
 					<input type="text" placeholder="Отчество">
 					<input type="tel" placeholder="Контактный телефон">
 					<input type="email" placeholder="Контактный e-mail">
-					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<textarea name="addition-info" id="add-info" cols="30" rows="10" placeholder="Дополнительная информация для мастера"></textarea>
 				</fieldset>
 
 				<fieldset class="beard-select">
-					<legend>ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ</legend>
+					<legend><span>ВЫБЕРИТЕ МОДЕЛЬ БОРОДЫ</span></legend>
 					<div>
 					<input type="radio" id="admiral" name="beard" value="opt1"><br>
 					<label for="admiral">адмирал<br><img src="" alt=""></label>
@@ -73,7 +74,7 @@
 				</fieldset>
 
 				<fieldset class="add-services">
-					<legend>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</legend>
+					<legend><span>ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ</span></legend>
 					<label for="dye">
 					<input type="checkbox" name="add-srv" value="opt1" id="dye">
 					Подкрасить бороду</label>
@@ -99,7 +100,7 @@
 					Отполировать лысину</label>
 				</fieldset>
 
-				<button class="" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+				<button class="btn btn--form" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
 
 			</form>
 		</div>
