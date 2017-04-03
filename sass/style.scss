@@ -553,4 +553,8 @@ sup {
 
 
 
-/*BSHOP PHOTO*/
+/*BSHOP PHOTO*/	
+.works__item {
+	min-height: 340px;
+	@include outline();
+}

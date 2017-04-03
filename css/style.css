@@ -433,3 +433,6 @@ input:focus {
     width: 33%; } }
 
 /*BSHOP PHOTO*/
+.works__item {
+  min-height: 340px;
+  outline: 1px solid red; }
