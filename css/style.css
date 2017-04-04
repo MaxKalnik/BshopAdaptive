@@ -357,7 +357,7 @@ input:focus {
     position: static;
     float: right; } }
 
-/*BSHOP-PHOTO*/
+/*BSHOP-FORM*/
 .form-content .wrapper {
   position: relative; }
 
@@ -433,6 +433,38 @@ input:focus {
     width: 33%; } }
 
 /*BSHOP PHOTO*/
+/*WORKS*/
+.works {
+  position: relative; }
+
 .works__item {
   min-height: 340px;
   outline: 1px solid red; }
+  .works__item--month-best {
+    min-height: 750px; }
+
+.index-btn {
+  display: none; }
+
+@media (min-width: 768px) {
+  .index-btn {
+    display: block;
+    position: absolute; }
+  .works__item {
+    padding-left: 320px; }
+  .works__item img {
+    float: left; } }
+
+@media (min-width: 1200px) {
+  .works__item:nth-of-type(n+1) {
+    width: 320px;
+    display: inline-block; }
+  .works__item--month-best {
+    width: auto;
+    padding-left: 480px; } }
+
+/*PRICES*/
+.prices__table {
+  display: table;
+  width: 100%;
+  text-align: center; }
