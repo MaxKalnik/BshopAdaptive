@@ -583,13 +583,25 @@ sup {
 	}
 }
 @media (min-width: 1200px) {
+	.works {
+		@include clearfix();
+	}
 	.works__item:nth-of-type(n+1) {
-		width: 320px;
+		width: 295px;
 		display: inline-block;
+		padding-left: 0;
+		vertical-align: top;
 		}
-	.works__item--month-best {
+	.works__item:first-of-type {
 		width: auto;
 		padding-left: 480px;
+	}
+	.works__item:nth-of-type(2) {
+		float: left;
+		margin-right: 4%;
+	}
+	.works__item:nth-of-type(4) {
+		float: right;
 	}
 
 }
