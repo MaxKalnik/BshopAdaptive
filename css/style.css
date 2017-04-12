@@ -427,7 +427,7 @@ button:active {
 
 /*STATISTICS*/
 .statistics__promo {
-  min-height: 185px;
+  min-height: 130px;
   text-align: center;
   outline: 1px solid red; }
 
@@ -437,8 +437,11 @@ button:active {
   outline: 1px solid blue; }
 
 @media (min-width: 768px) {
+  .statistics {
+    position: relative;
+    margin-top: -186px; }
   .statistics__promo {
-    min-height: 320px; }
+    min-height: 186px; }
   .statistics-items {
     font-size: 0; }
   .statistics__item {
@@ -450,6 +453,9 @@ button:active {
     line-height: 18px; } }
 
 @media (min-width: 1200px) {
+  .statistics {
+    position: relative;
+    margin-top: -160px; }
   .statistics__promo {
     float: left;
     min-height: 320px;
